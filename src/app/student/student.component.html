@@ -1,0 +1,9 @@
+
+
+<ul>
+    <li *ngFor="let st of students">
+        id: {{st.id}},  name: {{st.name}},  major: {{st.major}},  
+        <span class="avg"  *ngIf="st.average >= 90">average: {{st.average}} &#9733; </span>
+         <span *ngIf="st.average < 90"> average: {{st.average}}</span>
+    </li>
+</ul>
